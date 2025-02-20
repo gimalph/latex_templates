@@ -1,0 +1,85 @@
+%---------------------
+% Packages
+%---------------------
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts}
+\usepackage{mathtools,amsthm}
+\usepackage{thmtools}
+\usepackage{mathrsfs}
+
+\usepackage{enumerate}
+\usepackage{hyperref,xcolor}
+
+\usepackage{multirow}
+\usepackage{tabularx, environ}
+
+%---------------------
+% Tikz settings
+%---------------------
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+
+%---------------------
+% For draft
+%---------------------
+
+\definecolor{darkred}{rgb}{0.7,0,0}
+\newcommand{\TODO}[1]{\textcolor{darkred}{[TODO: #1]}}
+
+%---------------------
+% for hyperref
+%---------------------
+
+\pdfstringdefDisableCommands{%
+  \def\\{}%
+  \def\texttt#1{#1}%
+  \def\textsc#1{#1}%
+}
+
+%---------------------
+% cleverref
+%---------------------
+\usepackage[capitalise]{cleveref}
+
+\newtheorem{theorem}{Theorem}
+\crefname{theorem}{Theorem}{Theorems}
+\newtheorem{proposition}[theorem]{Proposition}
+\crefname{proposition}{Proposition}{Propositions}
+\newtheorem{observation}[theorem]{Observation}
+\crefname{observation}{Observation}{Observations}
+\newtheorem{lemma}[theorem]{Lemma}
+\crefname{lemma}{Lemma}{Lemmas}
+\newtheorem{corollary}[theorem]{Corollary}
+\crefname{corollary}{Corollary}{Corollaries}
+\newtheorem{claim}[theorem]{Claim}
+\crefname{claim}{Calim}{Claims}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{example}{Example}
+\newtheorem{remark}[theorem]{Remark}
+\crefname{remark}{Remark}{Remarks}
+
+\crefname{section}{Section}{Sections}
+\crefname{subsection}{Subsection}{Subsections}
+\crefname{chapter}{Chapter}{Chapters}
+
+%---------------------
+% Delimiters
+%---------------------
+\DeclarePairedDelimiter{\parens}{(}{)}
+\DeclarePairedDelimiter{\braces}{\{}{\}}
+\DeclarePairedDelimiter{\abs}{|}{|}
+\DeclarePairedDelimiter{\floors}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceils}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\angles}{\langle}{\rangle}
+
+%---------------------
+% Classes
+%---------------------
+
+\newcommand{\ClassNameFont}[1]{\textsc{#1}} 
+\newcommand{\FunctionNameFont}[1]{\mathsf{#1}} 
+\newcommand{\ConstantSymbolFont}[1]{\mathbf{#1}} 

@@ -1,0 +1,41 @@
+% pdflatex + bibtex
+\documentclass[
+	11pt,
+	a4,
+	hyperref,
+	utf8
+]{article}
+
+\usepackage{inputenc}
+
+\usepackage{mysetting}
+\usepackage{fullpage}
+
+\usepackage[backend=bibtex,natbib=true]{biblatex} 
+\ExecuteBibliographyOptions{
+	sortcites=true,
+	hyperref=auto,
+	date=year,
+	giveninits=false,
+	maxbibnames=9,
+	giveninits=true,
+	url=true,
+	doi=true,
+}
+\addbibresource{references}
+
+\title{Template}
+\author{Anonymous Author(s)}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	hogehoge
+\end{abstract}
+
+\input{section/intro.tex}
+\printbibliography
+
+\end{document}

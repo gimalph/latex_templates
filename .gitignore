@@ -1,0 +1,9 @@
+.out/
+.DS_Store
+.vscode
+*.aux
+*.fls
+*.out
+*.log
+*.toc
+*.synctex.gz
